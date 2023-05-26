@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 5px;
+    padding: 10px;
+    background-color: #EDDBC7;
+}
+
+.logo1 img {
+    width: 7em;
+    float: left; 
+}
+
+.titulo {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo2 img {
+    width: 7em;
+    float: right; 
+}
+
+
+/* Estilos Barra de navegación ============================================================================ */
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D0B8A8;
+    border-radius: 15px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    background-color:#f8f2f2;
+    color: #7e6858;
+}
+
+.navbar a.active {
+    background-color: #EDDBC7;
+}
+
+
+.subtitulo {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.7vw;
+    text-decoration: none;
+}
+
+
+/*Estilos de la galeria ==================================================================================== */
+
+.galeria {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.imagen-galeria {
+    max-width: 90%;
+    max-height: 110%;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px solid #D0B8A8;
+}
+
+.iruya, .capital, .cafayate, .salinas{
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:15px;
+}
+
+.leer-mas {
+    background-color: #D0B8A8;
+    width: 80px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.leer-mas:hover{
+    opacity: 0.5;
+}
+
+
+/*Estilo de footer =============================================================================================== */
+
+footer {
+    background-color: #f8f2f2;
+    font-family: 'Courgette', cursive;
+    font-size: .9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.icono {
+    cursor: pointer;
+}
+
+.icono:hover {
+    opacity: .50;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 1em;
+    }
+    .titulo {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+

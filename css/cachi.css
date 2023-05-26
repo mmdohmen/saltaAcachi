@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 5px;
+    padding: 10px;
+    background-color: #EDDBC7;
+}
+
+.logo1 img {
+    width: 7em;
+    float: left;
+}
+
+.titulo {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo2 img {
+    width: 7em;
+    float: right;
+
+}
+
+
+/* Estilos Barra de navegación ======================================================================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D0B8A8;
+    border-radius: 15px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    background-color: #f8f2f2;
+    color: #7e6858;
+}
+
+.navbar a.active {
+    background-color: #EDDBC7;
+}
+
+.subtitulo {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.7vw;
+    text-decoration: none;
+}
+
+h3,
+h5 {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* GRID ========================================================================================================================= */
+
+
+/* de salta a cachi por la cuesta del obispo ==================================================================================== */
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.mapa1 {
+    grid-area: mapa1;
+}
+
+.combo1 {
+    grid-area: combo1;
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+.foto7 {
+    grid-area: foto7;
+}
+
+.foto8 {
+    grid-area: foto8;
+}
+
+.foto9 {
+    grid-area: foto9;
+}
+
+.foto10 {
+    grid-area: foto10;
+}
+
+.foto11 {
+    grid-area: foto11;
+}
+
+.foto12 {
+    grid-area: foto12;
+}
+
+.titulo3 {
+    grid-area: titulo3;
+}
+
+.titulo4 {
+    grid-area: titulo4;
+}
+
+.texto5 {
+    grid-area: texto5;
+}
+
+.texto6 {
+    grid-area: texto6;
+}
+
+.foto13 {
+    grid-area: foto13;
+}
+
+.titulo7 {
+    grid-area: titulo7;
+}
+
+.lista1 {
+    grid-area: lista1;
+}
+
+.lista2 {
+    grid-area: lista2;
+}
+
+.lista3 {
+    grid-area: lista3;
+}
+
+.lista4 {
+    grid-area: lista4;
+}
+
+.lista5 {
+    grid-area: lista5;
+}
+
+.lista6 {
+    grid-area: lista6;
+}
+
+.titulo8 {
+    grid-area: titulo8;
+}
+
+.video1 {
+    grid-area: video1;
+}
+
+.video2 {
+    grid-area: video2;
+}
+
+
+
+/* estilo figure ============================================================================================================= */
+figure img {
+    margin-top: 7px;
+    padding: 4px;
+    background: #D0B8A8;
+    border-radius: 16px;
+    transition: transform 0.3s ease-in-out 0.1s;
+    box-shadow: #D0B8A8 7px 7px 9px;
+}
+
+/* cambia de tamaño al pasar el mouse sobre 'HOVER' la imagen*/
+figure img:hover {
+    transform: scale(3.4);
+    cursor: pointer;
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    text-align: left;
+}
+
+
+/* estilo CACHI ========================================================================================================= */
+#cachi {
+    background-color: #FFA000;
+}
+
+.qver {
+    background-color: #8D6E63;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#stories {
+    background-color: #00796B;
+    color: white;
+}
+
+
+
+/*Estilo de footer ========================================================================================================== */
+footer {
+    background-color: #f8f2f2;
+    font-family: 'Courgette', cursive;
+    font-size: .9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.icono {
+    cursor: pointer;
+}
+
+.icono:hover {
+    opacity: .50;
+}
+
+
+
+/* breakpoints ================================================================================================================== */
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+    figure.foto2 img:hover,
+    figure.foto4 img:hover,
+    figure.foto6 img:hover,
+    figure.foto8 img:hover,
+    figure.foto10 img:hover {
+        transform: scale(3.4) translateX(54px);
+        cursor: pointer;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "titulo1 titulo1"
+            "mapa1 mapa1"
+            "combo1 combo1"
+            "texto1 texto1"
+            "br br"
+            "titulo2 titulo2"
+            "foto1 foto1"
+            "foto2 foto3"
+            "foto4 foto5"
+            "foto6 foto7"
+            "foto8 foto9"
+            "foto10 foto11"
+            "foto12 foto12"
+            "br2 br2"
+            "titulo3 titulo3"
+            "titulo4 titulo4"
+            "foto13 foto13"
+            "texto5 texto5"
+            "texto6 texto6"
+            "br3 br3"
+            "titulo7 titulo7"
+            "lista1 lista2"
+            "lista3 lista4"
+            "lista5 lista6"
+            "br4 br4"
+            "titulo8 titulo8"
+            "video1 video1"
+            "video2 video2";
+        grid-gap: 10px 10px;
+        margin: 5px;
+        height: auto;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
+            "mapa1 mapa1 mapa1 combo1 combo1 combo1"
+            "mapa1 mapa1 mapa1 texto1 texto1 texto1"
+            "br br br br br br"
+            "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
+            "foto1 foto1 foto1 foto1 foto1 foto1"
+            ". foto2 foto3 foto4 foto5 ."
+            ". foto6 foto7 foto8 foto9 ."
+            ". . foto10 foto11 . ."
+            "foto12 foto12 foto12 foto12 foto12 foto12"
+
+            "br2 br2 br2 br2 br2 br2"
+
+            "titulo3 titulo3 titulo3 titulo3 titulo3 titulo3"
+            "titulo4 titulo4 titulo4 titulo4 titulo4 titulo4"
+            "texto5 texto5 texto5 foto13 foto13 foto13"
+            "texto6 texto6 texto6 foto13 foto13 foto13"
+
+            "br3 br3 br3 br3 br3 br3"
+
+            "titulo7 titulo7 titulo7 titulo7 titulo7 titulo7"
+            "lista1 lista1 lista2 lista2 lista3 lista3"
+            "lista4 lista4 lista5 lista5 lista6 lista6"
+
+            "br4 br4 br4 br4 br4 br4"
+
+            "titulo8 titulo8 titulo8 titulo8 titulo8 titulo8"
+            "video1 video1 video1 video2 video2 video2";
+        grid-gap: 10px 10px;
+        margin: 5px;
+        height: auto;
+
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 10vh 5vh 30vh 5vh 10vh 30vh 5vh 10vh 10vh 30vh 5vh 5vh 10vh 25vh 5vh 10vh 50vh;
+        grid-template-areas:
+            "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1 titulo1"
+            "mapa1 mapa1 mapa1 mapa1 combo1 combo1 combo1 combo1 combo1 combo1 combo1 combo1"
+            "mapa1 mapa1 mapa1 mapa1 texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1"
+
+            "br br br br br br br br br br br br"
+
+            "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2 titulo2"
+            "foto1 foto2 foto3 foto4 foto5 foto6 foto7 foto8 foto9 foto10 foto11 foto12"
+
+            "br2 br2 br2 br2 br2 br2 br2 br2 br2 br2 br2 br2"
+
+            "titulo3 titulo3 titulo3 titulo3 titulo3 titulo3 titulo3 titulo3 titulo3 titulo3 titulo3 titulo3"
+            "titulo4 titulo4 titulo4 titulo4 titulo4 titulo4 titulo4 titulo4 titulo4 titulo4 titulo4 titulo4"
+            "texto5 texto5 texto5 texto5 texto5 foto13 foto13 foto13 foto13 foto13 foto13 foto13"
+            "texto6 texto6 texto6 texto6 texto6 foto13 foto13 foto13 foto13 foto13 foto13 foto13"
+
+            "br3 br3 br3 br3 br3 br3 br3 br3 br3 br3 br3 br3"
+
+            "titulo7 titulo7 titulo7 titulo7 titulo7 titulo7 titulo7 titulo7 titulo7 titulo7 titulo7 titulo7"
+            "lista1 lista1 lista2 lista2 lista3 lista3 lista4 lista4 lista5 lista5 lista6 lista6"
+
+            "br4 br4 br4 br4 br4 br4 br4 br4 br4 br4 br4 br4"
+
+            "titulo8 titulo8 titulo8 titulo8 titulo8 titulo8 titulo8 titulo8 titulo8 titulo8 titulo8 titulo8"
+            "video1 video1 video1 video1 video1 video1 video2 video2 video2 video2 video2 video2";
+
+        grid-gap: 10px 10px;
+        margin: 5px;
+        height: auto;
+        background-color: white;
+    }
+}
