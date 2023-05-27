@@ -4,96 +4,89 @@
     box-sizing: border-box;
 }
 
-header {
-    margin: 5px;
+main {
+    margin: 10px;
     padding: 10px;
-    background-color: #EDDBC7;
-}
-
-.logo1 img {
-    width: 7em;
-    float: left;  
-}
-
-.titulo {
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.logo2 img {
-    width: 7em;
-    float: right;
-    
-}
-
-
-/* Estilos Barra de navegación ======================================================================================= */
-
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #D0B8A8;
-    border-radius: 15px;
-}
-
-.navbar a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.navbar a:hover {
-    background-color:#f8f2f2;
-    color: #7e6858;
-}
-
-.navbar a.active {
-    background-color: #EDDBC7;
 }
 
 .subtitulo {
     font-family: 'Courgette', cursive;
+    font-size: 2rem;
+    margin: 30px;
     text-align: center;
-    padding: 10px;
-    font-size: 2.7vw;
-    text-decoration: none;
 }
 
-
-/*Estilo de footer ========================================================================================================== */
-footer {
-    background-color: #f8f2f2;
-    font-family: 'Courgette', cursive;
-    font-size: .9em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.parrafo {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     margin: 20px;
 }
 
-.icono {
-    cursor: pointer;
+
+.articulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    padding: 1px;
+    margin: 10px;
 }
 
-.icono:hover {
-    opacity: .50;
+.foto img{
+    max-width: 80%;
+    max-height: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px solid #D0B8A8;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-    }
+.foto, .videoYoutube {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.videoYoutube iframe {
+    border: #D0B8A8 solid;
+}
+
+/*Media queries*/
+@media screen and (max-width: 480px) {
     .navbar a {
-        padding: 8px;
-        font-size: 1em;
+        display: none;
+    }
+    .navbar a.icon {
+    float: right;
+    display: block;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
     }
     .titulo {
         font-size: 1.2rem;
+    }
+    .subtitulo1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .logo1 img {
+        width: 3.5em;
+        float: left;
+    margin-bottom: 5px;
+    }
+    .logo2 img {
+        width: 3.5em;
+        float: right;
+    margin-bottom: 5px;
     }
 }
